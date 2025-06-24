@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>KXDEK Studio - Acerca De</title>
+    <link rel="stylesheet" href="estilos.css">      
+</head>
+
+<body class="body-about">
+
+    <div class="accessibility-menu">
+        <button class="accessibility-toggle" onclick="toggleAccessibilityMenu()" aria-label="Abrir menú de accesibilidad">
+        ♿
+        </button>
+    
+        <div class="accessibility-content" id="accessibilityContent">
+            <h3 class="accessibility-title">Accesibilidad</h3>
+        
+                <div class="accessibility-option">
+                    <label for="contrast">Alto Contraste</label>
+                        <div class="accessibility-slider" id="contrastSlider" onclick="toggleContrast()"></div>
+                </div>
+        
+            <div class="accessibility-option">
+                <label for="textSize">Texto Grande</label>
+                    <div class="accessibility-slider" id="textSizeSlider" onclick="toggleTextSize()"></div>
+            </div>
+        
+            <div class="accessibility-option">
+                <label for="darkMode">Modo Oscuro</label>
+                    <div class="accessibility-slider" id="darkModeSlider" onclick="toggleDarkMode()"></div>
+            </div>
+        
+            <div class="accessibility-option">
+                <label for="reduceMotion">Reducir Animaciones</label>
+                    <div class="accessibility-slider" id="motionSlider" onclick="toggleMotion()"></div>
+            </div>
+        
+            <div class="accessibility-option">
+                <label for="focusIndicators">Indicadores de Foco</label>
+                    <div class="accessibility-slider" id="focusSlider" onclick="toggleFocus()"></div>
+            </div>
+        
+            <div class="accessibility-option">
+                <label for="dyslexiaFont">Fuente para Dislexia</label>
+                    <div class="accessibility-slider" id="fontSlider" onclick="toggleFont()"></div>
+            </div>
+        
+            <div class="accessibility-option">
+                <button class="accessibility-button" onclick="resetAccessibility()">Restablecer</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="header-section">
+        <div class="logo-container">
+            <a href="index.html">
+                <img src="resources/images/logo.png" alt="KXDEK Studio">
+            </a>
+        </div>
+        <h2 class="tagline">Hecho por artistas, para artistas</h2>
+    </div>
+
+
+    <hr>
+
+    <div class="main-content">
+        <div class="about-content">
+            <h1>Acerda de:</h1>
+
+            <div style="margin: 2rem 0;">
+                <h2>Página Creada por:</h2>
+                <h3>Isaac López V</h3>
+                <p>Como parte de la tarea para Programación IV</p>
+            </div>
+
+            <div style="margin: 2rem 0;">
+                <h3>Universidad Americana</h3>
+            </div>
+
+            <div class="university-logo">
+                <a href="https://www.uam.ac.cr/">
+                    <img src="resources/images/uam.png" alt="Universidad Americana">
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="accessibility.js"></script>
+</body>
+</html>

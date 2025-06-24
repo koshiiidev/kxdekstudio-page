@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <title>KXDEK Studio</title>
+        <link rel="stylesheet" href="estilos.css">
+        
+    </head>
+
+<body class="body-index">
+
+    <div class="accessibility-menu">
+        <button class="accessibility-toggle" onclick="toggleAccessibilityMenu()" aria-label="Abrir menú de accesibilidad">
+        ♿
+        </button>
+    
+        <div class="accessibility-content" id="accessibilityContent">
+            <h3 class="accessibility-title">Accesibilidad</h3>
+        
+                <div class="accessibility-option">
+                    <label for="contrast">Alto Contraste</label>
+                        <div class="accessibility-slider" id="contrastSlider" onclick="toggleContrast()"></div>
+                </div>
+        
+            <div class="accessibility-option">
+                <label for="textSize">Texto Grande</label>
+                    <div class="accessibility-slider" id="textSizeSlider" onclick="toggleTextSize()"></div>
+            </div>
+        
+            <div class="accessibility-option">
+                <label for="darkMode">Modo Oscuro</label>
+                    <div class="accessibility-slider" id="darkModeSlider" onclick="toggleDarkMode()"></div>
+            </div>
+        
+            <div class="accessibility-option">
+                <label for="reduceMotion">Reducir Animaciones</label>
+                    <div class="accessibility-slider" id="motionSlider" onclick="toggleMotion()"></div>
+            </div>
+        
+            <div class="accessibility-option">
+                <label for="focusIndicators">Indicadores de Foco</label>
+                    <div class="accessibility-slider" id="focusSlider" onclick="toggleFocus()"></div>
+            </div>
+        
+            <div class="accessibility-option">
+                <label for="dyslexiaFont">Fuente para Dislexia</label>
+                    <div class="accessibility-slider" id="fontSlider" onclick="toggleFont()"></div>
+            </div>
+        
+            <div class="accessibility-option">
+                <button class="accessibility-button" onclick="resetAccessibility()">Restablecer</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="header-section">
+        <div class="logo-container">
+            <a href="index.html">
+                <img src="resources/images/logo.png" alt="KXDEK Studio">
+            </a>
+        </div>
+        <h2 class="tagline">Hecho por artistas, para artistas</h2>
+    </div>      
+
+    <hr>
+
+    <div class="nav-container">
+        <div class="nav-box">
+            <a href="prices.html" class="nav-link">Planes</a>
+            <a href="contact.html" class="nav-link">Contacto</a>
+            <a href="about.html" class="nav-link">Acerca De</a>
+        </div>
+    </div>
+
+
+    <div class="main-content">
+        <div class="content-box">
+            <h2>
+                En <strong>KXDEK Studio</strong> no solo producimos musica, <strong>damos vida a tu sonido.</strong>
+            </h2>
+
+            <p>
+                Somos el aliado creativo de artistas emergentes, bandas, cantantes y solistas 
+                que quieren llevar su música al siguiente nivel. Ya sea que estés empezando 
+                con una demo, buscando una mezcla que realmente se sienta profesional o 
+                necesites producción desde cero.
+            </p>
+
+            <p>
+                Aquí hacemos que tu visión se escuche <strong>potente, clara y única.</strong>
+            </p>
+            
+            <p>
+                Nos apasionan los géneros como la <strong>electrónica, música urbana, metal</strong> y más, pero 
+                no creemos en las etiquetas: <strong>nos mueve la buena música</strong>, venga de donde venga.
+            </p>
+            
+            <p>
+                Con experiencia y un enfoque flexible, adaptamos cada proyecto a tu estilo y energía.
+                Si sueñas con un sonido que destaque y conecte, este es tu lugar.
+            </p>
+            
+            <p>
+                ¿Tienes una idea? ¿Una maqueta olvidada? ¿Un proyecto que necesita ese último empujón?
+            </p>
+        </div>
+
+        <div class="nav-container">
+            <div class="nav-box">
+                <a href="contact.html" class="nav-link">Contáctanos</a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <footer>KXDEK Studio</footer>
+
+    <script src="accessibility.js"></script>
+
+</body>
+</html>

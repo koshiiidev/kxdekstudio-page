@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale1.0">
+    <title>KXDEK Studio - Planes</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body class="body-prices">
+
+    <div class="accessibility-menu">
+        <button class="accessibility-toggle" onclick="toggleAccessibilityMenu()" aria-label="Abrir menú de accesibilidad">
+        ♿
+        </button>
+    
+        <div class="accessibility-content" id="accessibilityContent">
+            <h3 class="accessibility-title">Accesibilidad</h3>
+        
+                <div class="accessibility-option">
+                    <label for="contrast">Alto Contraste</label>
+                        <div class="accessibility-slider" id="contrastSlider" onclick="toggleContrast()"></div>
+                </div>
+        
+            <div class="accessibility-option">
+                <label for="textSize">Texto Grande</label>
+                    <div class="accessibility-slider" id="textSizeSlider" onclick="toggleTextSize()"></div>
+            </div>
+        
+            <div class="accessibility-option">
+                <label for="darkMode">Modo Oscuro</label>
+                    <div class="accessibility-slider" id="darkModeSlider" onclick="toggleDarkMode()"></div>
+            </div>
+        
+            <div class="accessibility-option">
+                <label for="reduceMotion">Reducir Animaciones</label>
+                    <div class="accessibility-slider" id="motionSlider" onclick="toggleMotion()"></div>
+            </div>
+        
+            <div class="accessibility-option">
+                <label for="focusIndicators">Indicadores de Foco</label>
+                    <div class="accessibility-slider" id="focusSlider" onclick="toggleFocus()"></div>
+            </div>
+        
+            <div class="accessibility-option">
+                <label for="dyslexiaFont">Fuente para Dislexia</label>
+                    <div class="accessibility-slider" id="fontSlider" onclick="toggleFont()"></div>
+            </div>
+        
+            <div class="accessibility-option">
+                <button class="accessibility-button" onclick="resetAccessibility()">Restablecer</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="header-section">
+            <div class="logo-container">
+                <a href="index.html">
+                    <img src="resources/images/logo.png" alt="KXDEK Studio">
+                </a>
+            </div>
+            <h2 class="tagline">Hecho por artistas, para artistas</h2>
+        </div>
+
+        <hr>
+
+        <h1>Nuestros Planes</h1>
+        <p style="font-size: 1.2rem; margin-bottom: 2rem; opacity: 0.9;">
+            Elige el plan que mejor se adapte a tu proyecto musical
+        </p>
+
+        <div class="plans-grid">
+            <div class="plan-card">
+                <h2>Plan Básico</h2>
+                <h3>Incluye:</h3>
+                <div class="features-list">
+                    <p>✅ Limpieza de audio (reducción de ruido, pops y clicks básicos)</p>
+                    <p>✅ Ecualización y compresión básica en cada pista</p>
+                    <p>✅ Aplicación de efectos ligeros (reverb y delay simples)</p>
+                    <p> ✅ 1 revisión incluida</p>
+                </div>
+                <div class="plan-description">
+                    <p>Ideal para <b>demos, canciones caseras o proyectos con presupuesto ajustado</b></p>
+                </div>
+            </div>
+
+            <div class="plan-card">
+                <h2>Plan Intermedio</h2>
+                <h3>Incluye:</h3>
+                <div class="features-list">
+                    <p>✅ Todo lo del plan básico</p>
+                    <p>✅ Corrección de fase y alineación de voces o instrumentos</p>
+                    <p>✅ Automatización de volúmenes y efectos para mayor dinámica</p>
+                    <p>✅ Procesamiento avanzado en voces (de-essing, afinación ligera si es necesario)</p>
+                    <p>✅ Efectos creativos personalizados (reverb, delay, chorus, etc.</p>
+                    <P>✅ 2 revisiones incluidas</P>
+                </div>
+                <div class="plan-description">
+                    <p>Ideal para <b>artistas independientes, bandas en crecimiento o producciones semi-profesionales.</b></p>
+                </div>
+            </div>
+
+            <div class="plan-card">
+                <h2>Plan Profesional</h2>
+                <h3>Incluye</h3>
+                <div class="features-list">
+                    <p>✅ Todo lo del plan intermedio</p>
+                    <p>✅ Edición avanzada de audio (timestretching, afinación manual, reducción de ruidos complejos)</p>
+                    <p>✅ Paralel processing (compresión paralela, distorsión armónica, etc.)</p>
+                    <p>✅ Mix en stems o en grupos para facilitar el mastering</p>
+                    <p>✅ Sonido optimizado para streaming y plataformas digitales</p>
+                    <p>✅ Hasta 4 revisiones incluidas</p>
+                </div>
+                <div class="plan-description">
+                    <p>Ideal para <b>álbumes profesionales, artistas con sello discográfico o producciones de alto nivel.</b></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>KXDEK Studio</footer>
+
+    <script src="accessibility.js"></script>
+
+</body>
+</html>
